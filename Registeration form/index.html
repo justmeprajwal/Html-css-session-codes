@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="form-wrapper">
+        <form class="form-card" action="submit">
+            <header class="form-header">
+                <h1>Registration Form</h1>
+                <p class="sub">Fill in your details below</p>
+            </header>
+
+            <!-- Name -->
+            <div class="field">
+                <label class="field-label" for="name">Full Name <span class="danger-text">*</span></label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="e.g. Alpha Alpha"
+                    required
+                >
+            </div>
+
+            <!-- Password -->
+            <div class="field">
+                <label class="field-label" for="password">Password <span class="danger-text">*</span></label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                >
+            </div>
+
+            <!-- Address -->
+            <div class="field">
+                <label class="field-label" for="address">Address <span class="danger-text">*</span></label>
+                <input
+                    type="text"
+                    id="address"
+                    name="address"
+                    placeholder="Enter your address (street, house no., tole)"
+                    required
+                >
+            </div>
+
+            <!-- District -->
+            <div class="field">
+                <label class="field-label" for="district">District <span class="danger-text">*</span></label>
+                <select name="district" id="district" required>
+                    <option value="" disabled selected>Select District</option>
+                    <option value="rupandehi">Rupandehi</option>
+                    <option value="kathmandu">Kathmandu</option>
+                    <option value="chitwan">Chitwan</option>
+                </select>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="field">
+                <label class="field-label" for="dob">Date of Birth <span class="danger-text">*</span></label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <!-- Gender -->
+            <fieldset class="field">
+                <legend class="legend">Gender <span class="danger-text">*</span></legend>
+                <div class="option-group">
+                    <label class="option">
+                        <input type="radio" name="gender" value="male" required>
+                        <span>Male</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="gender" value="female">
+                        <span>Female</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Hobbies -->
+            <fieldset class="field">
+                <legend class="legend">Hobbies <span class="danger-text">*</span></legend>
+                <div class="option-group">
+                    <label class="option">
+                        <input type="checkbox" name="hobbies" value="gta6">
+                        <span>GTA VI</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="hobbies" value="god_of_war">
+                        <span>God of War</span>
+                    </label>
+                    <label class="option">
+                        <input type="checkbox" name="hobbies" value="uncharted">
+                        <span>Uncharted</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Message Field -->
+            <div class="field">
+                <label class="field-label" for="message">Message</label>
+                <textarea name="message" id="message" rows="3" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <!-- Actions -->
+            <div class="button-group">
+                <button type="reset" class="btn btn-reset">Reset</button>
+                <button type="submit" class="btn btn-submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
